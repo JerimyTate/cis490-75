@@ -12,8 +12,11 @@ public class Rock implements GameType {
         if (opponentChoice== R.id.btnScissors){
             return GameUtils.BEATS;
         }else if (opponentChoice==R.id.btnPaper){
-            return GameUtils.LOSES_TO;
-        }
+            return GameUtils.LOSES_TO;}
+        else if (opponentChoice==R.id.btnSpock){
+            return GameUtils.LOSES_TO;}
+        else if (opponentChoice==R.id.btnLizard) {
+            return GameUtils.BEATS;}
         else{
             return GameUtils.TIES;
         }

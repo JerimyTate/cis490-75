@@ -13,7 +13,11 @@ public class Paper implements GameType {
         if (opponentChoice== R.id.btnRock){
             return GameUtils.BEATS;
         }else if (opponentChoice==R.id.btnScissors){
-            return GameUtils.LOSES_TO;
+            return GameUtils.LOSES_TO;}
+         else if (opponentChoice == R.id.btnSpock) {
+        return GameUtils.BEATS;
+    }   else if (opponentChoice == R.id.btnLizard) {
+        return GameUtils.LOSES_TO;
         }
         else{
             return GameUtils.TIES;
