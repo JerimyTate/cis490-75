@@ -67,7 +67,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         Assert.assertEquals(GameUtils.BEATS,GameUtils.evaluateWinner(player,R.id.btnPaper));
 
 
-        Assert.assertNotSame(GameUtils.BEATS,GameUtils.evaluateWinner(player,R.id.btnLizard));
+        Assert.assertNotSame(GameUtils.BEATS,GameUtils.evaluateWinner(player,R.id.btnSpock));
     }
 
 
